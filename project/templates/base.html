@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'mysite/css/style.css' %} ">
+    <link rel="stylesheet" href="{% static 'another/css/style.css' %} ">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %} ">
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is a base template</h1>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, porro accusamus alias assumenda, quae suscipit veritatis ducimus error dolorem quas tempore fugit, repellendus reprehenderit similique modi in aperiam reiciendis magni?</p>
+    {% block content %}  
+    {% endblock  %}
+</body>
+</html>
